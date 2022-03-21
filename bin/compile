@@ -46,10 +46,10 @@ cd $BUILD_DIR
 
 if [[ -f requirements.txt ]]; then
   puts-step "Installing dependencies using pip"
-  python -m pip install --quiet -r requirements.txt | indent
+  python3 -m pip install --quiet -r requirements.txt | indent
 else
   puts-step "Installing MkDocs"
-  python -m pip install --quiet mkdocs | indent
+  python3 -m pip install --quiet mkdocs | indent
 fi
 
 puts-step "Running MkDocs"
